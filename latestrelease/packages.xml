@@ -1,9 +1,8 @@
 
 					<packages>
-						<package name="NewPackageIvy" version="6.14.5" os="all" url="NewPackageIvy/NewPackageIvy-6.14.5-all.zip" desc="New Package with Ivy" org="Eindhoven University of Technology" license="GPL" author="H.M.W. Verbeek" auto="false" hasPlugins="true" logo="prom_subtitle_hat_300.png">
-				    	<dependency org="prom" name="ProM-Plugins" rev="latest" changing="true" transitive="true" />
-    	<dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
-    	<dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+						<package name="EfficientStorage" version="6.15.2" os="all" url="EfficientStorage/EfficientStorage-6.15.2-all.zip" desc="EfficientStorage" org="Eindhoven University of Technology" license="L-GPL" author="Boudewijn van Dongen" auto="false" hasPlugins="true" logo="prom_subtitle_hat_300.png">
+				       <dependency org="prom" name="LpSolve" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="BasicUtils" rev="latest" changing="true" transitive="true" />
 
 						</package>
 					</packages>
