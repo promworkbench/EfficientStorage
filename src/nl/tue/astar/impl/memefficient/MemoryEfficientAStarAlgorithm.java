@@ -33,9 +33,15 @@ public class MemoryEfficientAStarAlgorithm<H extends Head, T extends Tail> {
 		if (alignment == 0) {
 			alignment = 8;
 			try {
-				String alignmentAsString = System.getenv("ALIGNMENT");
+				String alignmentAsString = System.getProperty("nl.tue.astar.impl.memefficient.alignment");
+				System.out.println("[MemoryEfficientAStarAlgorithm] nl.tue.astar.impl.memefficient.alignment=" + alignmentAsString);
+				if (alignmentAsString == null) {
+					alignmentAsString = System.getenv("ALIGNMENT");
+					System.out.println("[MemoryEfficientAStarAlgorithm] ALIGNMENT=" + alignmentAsString);
+				}
 				if (alignmentAsString != null) {
 					alignment = Integer.parseInt(alignmentAsString);
+					System.out.println("[MemoryEfficientAStarAlgorithm] alignment=" + alignment);
 				}
 			} catch (Exception e) {
 				// Ignore.
